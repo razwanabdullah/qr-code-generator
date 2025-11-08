@@ -1,0 +1,86 @@
+:root {
+  --bg-color: #f4f4f9;
+  --text-color: #000;
+  --container-bg: #fff;
+  --button-bg: #007bff;
+  --button-hover: #0056b3;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: var(--bg-color);
+  margin: 0;
+  color: var(--text-color);
+  transition: all 0.3s ease;
+}
+
+.container {
+  background: var(--container-bg);
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  text-align: center;
+  width: 320px;
+}
+
+input, select {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 12px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  font-size: 16px;
+}
+
+button {
+  background: var(--button-bg);
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+button:hover {
+  background: var(--button-hover);
+}
+
+.options {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+#qrContainer {
+  margin-top: 20px;
+}
+
+a {
+  color: var(--button-bg);
+  text-decoration: none;
+}
+
+.actions {
+  margin-top: 10px;
+}
+
+/* 🌙 Dark Mode Styles */
+body.dark {
+  --bg-color: #121212;
+  --text-color: #eee;
+  --container-bg: #1e1e1e;
+  --button-bg: #0a84ff;
+  --button-hover: #0060df;
+}
+
+.dark input, .dark select {
+  background: #2b2b2b;
+  color: #fff;
+  border: 1px solid #444;
+}
